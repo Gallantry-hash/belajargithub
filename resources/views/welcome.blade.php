@@ -918,12 +918,12 @@
                         </p>
 
                         <div class="hero__actions">
-                            <button type="button" class="btn btn--primary" data-action="barang">
+                            <a href="{{ route('barang.create') }}" class="btn btn--primary">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M12 5v14M5 12h14" />
                                 </svg>
                                 Tambah Barang
-                            </button>
+                            </a>
 
                             <button type="button" class="btn btn--secondary" data-action="pegawai">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1165,12 +1165,12 @@
                                 Tambah Pegawai
                             </button>
 
-                            <button type="button" class="btn btn--ghost" data-action="barang">
+                            <a href="{{ route('barang.create') }}" class="btn btn--ghost">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M12 5v14M5 12h14" />
                                 </svg>
                                 Tambah Barang
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1197,7 +1197,6 @@
         <script>
             (function () {
                 const messages = {
-                    barang: 'Form Tambah Barang belum tersedia — fitur ini segera hadir.',
                     pegawai: 'Form Tambah Pegawai belum tersedia — fitur ini segera hadir.',
                 };
 
